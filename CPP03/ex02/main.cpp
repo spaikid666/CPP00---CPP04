@@ -17,7 +17,7 @@ int main()
 
 	while ((ct.getEnergyPoints() > 0 && ct.getHitPoints() > 0) ||
        (st.getEnergyPoints() > 0 && st.getHitPoints() > 0) ||
-			ft.getEnergyPoints() > 0 && ft.getHitPoints() > 0)
+			(ft.getEnergyPoints() > 0 && ft.getHitPoints() > 0))
 	{
 		if (turn % 2 == 0)
 		{
