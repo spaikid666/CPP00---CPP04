@@ -9,7 +9,7 @@ int main()
 	std::cout << "Oh no!, There are more than one ClapTraps in the same square meter\n\n";
 	std::cout << "Everybody knows that ClapTraps are territorial beings, get ready for the battle!\n";
 
-	/* Scenario 1 - Both run out of energy */
+	/* Scenario 1 - Both run out of energy
 	while ((ct1.getEnergyPoints() > 0 && ct1.getHitPoints() > 0) ||
        (ct2.getEnergyPoints() > 0 && ct2.getHitPoints() > 0))
 	{
@@ -32,8 +32,8 @@ int main()
 	}
 
 	std::cout << "Both ClapTraps run out of energy, they both suck, what a waste of resources!\n\n";
-
-	/* Scenario 2 - They do real damage
+ */
+	/* Scenario 2 - They do real damage  */
 	while ((ct1.getEnergyPoints() > 0 && ct1.getHitPoints() > 0) ||
        (ct2.getEnergyPoints() > 0 && ct2.getHitPoints() > 0))
 	{
@@ -55,6 +55,6 @@ int main()
 		turn++;
 	}
 	std::cout << "*** " << ct1.getName() << " won! ***\n\n";
- */
+
 	return 0;
 }

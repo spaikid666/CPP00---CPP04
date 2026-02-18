@@ -66,5 +66,5 @@ void ScavTrap::guardGate(void)
 		return;
 	}
 
-    std::cout << "ScavTrap '" << name << "' panicked and now is in Gate keeper mode but there are no gates arround ... WTF!!??.\n\n";
+    std::cout << "ScavTrap '" << name << "' panicked and now is in Gate-Keeper mode but there are no gates arround ... WTF!!??.\n\n";
 }

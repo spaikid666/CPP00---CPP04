@@ -65,7 +65,7 @@ void ClapTrap::takeDamage (unsigned int amount)
 	else
 		hitPoints -= amount;
 
-	std::cout << "ClapTrap '" << name << "' took " << amount << " points of damage! (" << hitPoints << " points remaining)\n\n";
+	std::cout << "ClapTrap '" << name << "' took " << amount << " points of damage! (" << energyPoints << " energy points remaining)\n\n";
 	
 	if (amount == 0)
 		std::cout << "Damn, that was lame!\n\n";
@@ -95,7 +95,7 @@ void ClapTrap::beRepaired (unsigned int amount)
 
 	hitPoints += amount;
 	
-	std::cout << "ClapTrap '" << name << "' repaired itself and restored " << amount << " health points! (" << hitPoints << " points remaining)\n\n";
+	std::cout << "ClapTrap '" << name << "' repaired itself and restored " << amount << " health points! (" << energyPoints << " energy points remaining)\n\n";
 
 	energyPoints--;
 }

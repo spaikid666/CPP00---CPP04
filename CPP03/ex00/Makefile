@@ -1,4 +1,4 @@
-NAME 					= ClapTrap
+NAME 					= ex00
 
 C++						= c++ -std=c++98
 
@@ -20,7 +20,7 @@ clean:
 						${REMOVE}
 
 fclean:					clean
-						rm -f ClapTrap
+						rm -f ex00
 						
 re:						fclean all
 

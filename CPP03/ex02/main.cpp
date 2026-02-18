@@ -29,10 +29,7 @@ int main()
 			if (st.getHitPoints() > 0)
 				ct.takeDamage(st.getAttackDamage());
 			else if (dead != 1)
-			{
-				std::cout << "ScavTrap '" << st.getName() << "' died in an atrocious and horrendous way!\n\n";
-				dead = 1;
-			}
+				std::cout << "ClapTrap '" << ct.getName() << "' died in an atrocious and horrendous way!\n\n";
 		}
 
 		else
@@ -43,6 +40,10 @@ int main()
 			else
 				st.guardGate();
 		}
+
+		if (ct.getHitPoints() <= 0)
+			dead = 1;
+
 		turn++;
 	}
 

@@ -1,4 +1,4 @@
-NAME 					= FragTrap
+NAME 					= ex02
 
 C++						= c++ -std=c++98
 
@@ -22,7 +22,7 @@ clean:
 						${REMOVE}
 
 fclean:					clean
-						rm -f FragTrap
+						rm -f ex02
 						
 re:						fclean all
 

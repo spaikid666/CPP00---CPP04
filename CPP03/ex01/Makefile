@@ -1,4 +1,4 @@
-NAME 					= ScavTrap
+NAME 					= ex01
 
 C++						= c++ -std=c++98
 
@@ -21,7 +21,7 @@ clean:
 						${REMOVE}
 
 fclean:					clean
-						rm -f ScavTrap
+						rm -f ex01
 						
 re:						fclean all
 
