@@ -17,10 +17,21 @@ int main()
 	me->equip(tmp);
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
+
+	AMateria* tmp2;
 	ICharacter* bob = new Character("bob");
+	tmp2 = src->createMateria("ice");
+	bob->equip(tmp2);
+	tmp2 = src->createMateria("cure");
+	bob->equip(tmp2);
 
 	me->use(0, *bob);
 	me->use(1, *bob);
+
+	std::cout << std::endl;
+
+	bob->use(0, *me);
+	bob->use(1, *me);
 
 	delete bob;
 	delete me;
