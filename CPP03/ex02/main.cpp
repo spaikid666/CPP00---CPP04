@@ -2,8 +2,6 @@
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
-/* ARREGLAR ESTO, CLAP TRAP ES EL QUE DEBE DE MORIR PORQUE HE CAMBIADO LAS STATS DE CLAP TRAP A LAS DEL EJERCICIO ANTERIOR */
-
 int main()
 {
 	ClapTrap ct ("CL4P-TP");
