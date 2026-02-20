@@ -34,8 +34,18 @@ FragTrap::~FragTrap(void)
 	std::cout << "Destructor Called, FragTrap '" << this->name << "' destroyed.\n\n";
 }
 
-void FragTrap::highFiveGuys()
+void FragTrap::highFiveGuys(void)
 {
-    std::cout << std::cout << "FragTrap " << this->name << " requests a high five! 🙏\n\n";
-    std::cout << std::cout << "The request of FragTrap " << this->name << " was successfully ignored!\n\n";
+    std::cout << "FragTrap " << this->name << " requests a high five! 🙏\n\n";
+    std::cout << "The request of FragTrap " << this->name << " was successfully ignored!\n\n";
+
+	this->energyPoints = this->energyPoints - 25;
+
+	if (this->energyPoints < 0)
+		this->energyPoints = 0;
+}
+
+void FragTrap::doHighFive(void)
+{
+	highFiveGuys();
 }

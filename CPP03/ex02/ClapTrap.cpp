@@ -101,12 +101,11 @@ void ClapTrap::beRepaired (int amount)
 	hitPoints += amount;
 	
 	std::cout << "ClapTrap '" << name << "' repaired itself and restored " << amount << " health points! (" << hitPoints << " points remaining)\n\n";
+	
+	this->energyPoints = this->energyPoints - 20;
 
-	if (energyPoints - 4 <= 0)
+	if (energyPoints - 20 <= 0)
 		energyPoints = 0;
-		
-	else
-		energyPoints = energyPoints - 4;
 }
 
 const std::string &ClapTrap::getName (void) const {return name;}

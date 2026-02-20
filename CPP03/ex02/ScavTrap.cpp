@@ -47,11 +47,11 @@ void ScavTrap::attack (const std::string &target)
 
 	std::cout << "ScavTrav '" << name << "' attacks '" << target << "' in its own an pretty unique way!\n\n";
 	
-	if (energyPoints - 4 <= 0)
+	if (energyPoints - 10 <= 0)
 		energyPoints = 0;
 
 	else
-		energyPoints = energyPoints - 4;
+		energyPoints = energyPoints - 10;
 
 }
 

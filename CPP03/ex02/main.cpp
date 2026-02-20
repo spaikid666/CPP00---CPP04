@@ -28,21 +28,22 @@ int main()
 			st.attack(ct.getName());
 			if (st.getHitPoints() > 0)
 				ct.takeDamage(st.getAttackDamage());
-			else if (dead != 1)
+			ft.doHighFive();
+			if (dead != 1)
 				std::cout << "ClapTrap '" << ct.getName() << "' died in an atrocious and horrendous way!\n\n";
+
+			if (ct.getHitPoints() <= 0)
+			dead = 1;
 		}
 
 		else
 		{
 			ct.beRepaired(1);
 			if (st.getHitPoints() > 10)
-				st.beRepaired(1);
+				st.beRepaired(11);
 			else
 				st.guardGate();
 		}
-
-		if (ct.getHitPoints() <= 0)
-			dead = 1;
 
 		turn++;
 	}
